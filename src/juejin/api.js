@@ -30,7 +30,6 @@ class Api {
    * @returns {Promise<*>}
    * {
    *   incr_point: Number 获得矿石数
-   *   sum_point: Number 总矿石数
    * }
    */
   checkIn() {
@@ -93,7 +92,7 @@ class Api {
   }
 
   /**
-   * 抽奖
+   * @desc 抽奖
    * @returns {Promise<*>}
    * {
    *   lottery_name: String 奖品名称
@@ -104,27 +103,12 @@ class Api {
   }
 
   /**
-   * 未收集的 Bug
+   * @desc 当前矿石数
    * @returns {Promise<*>}
-   * [
-   *   {
-   *     bug_type: Number Bug 类型
-   *     bug_time: Number 时间戳
-   *   }
-   * ]
+   * Number 矿石数量
    */
-  getNotCollectBug() {
-    return this.http.post('/user_api/v1/bugfix/not_collect', {})
-  }
-
-  /**
-   * @desc 收集 Bug
-   * @param bug_time
-   * @param bug_type
-   * @returns {Promise<*>}
-   */
-  collectBug({ bug_time = '', bug_type = '' } = {}) {
-    return this.http.post('/user_api/v1/bugfix/collect', { bug_time, bug_type })
+  getCurrentPoint() {
+    return this.http.get('/growth_api/v1/get_cur_point')
   }
 }
 
