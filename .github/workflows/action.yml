@@ -18,7 +18,7 @@ jobs:
 
       - name: Depend install and serve
         env:
-          COOKIE: ${{ secrets.COOKIE }}
+          COOKIE: _tea_utm_cache_2608={%22utm_source%22:%22gold_browser_extension%22}; sid_guard=f2d7b3c96b54d5cb6cf33b54727e05d1%7C1667376792%7C31536000%7CThu%2C+02-Nov-2023+08%3A13%3A12+GMT; uid_tt=bdc1c9511744963cf62cd3fc8e084dc1; uid_tt_ss=bdc1c9511744963cf62cd3fc8e084dc1; sid_tt=f2d7b3c96b54d5cb6cf33b54727e05d1; sessionid=f2d7b3c96b54d5cb6cf33b54727e05d1; sessionid_ss=f2d7b3c96b54d5cb6cf33b54727e05d1; sid_ucp_v1=1.0.0-KDc1ZGQxZmJhNTNlZmEwMzlmZDkzYWZlNDAxNTg0YjUzMWM5ZmFmOWUKFwj96oDklY2JARCYzYibBhiwFDgCQO8HGgJsZiIgZjJkN2IzYzk2YjU0ZDVjYjZjZjMzYjU0NzI3ZTA1ZDE; ssid_ucp_v1=1.0.0-KDc1ZGQxZmJhNTNlZmEwMzlmZDkzYWZlNDAxNTg0YjUzMWM5ZmFmOWUKFwj96oDklY2JARCYzYibBhiwFDgCQO8HGgJsZiIgZjJkN2IzYzk2YjU0ZDVjYjZjZjMzYjU0NzI3ZTA1ZDE; __tea_cookie_tokens_2608=%257B%2522web_id%2522%253A%25227169235875803563534%2522%252C%2522user_unique_id%2522%253A%25227169235875803563534%2522%252C%2522timestamp%2522%253A1669217815084%257D; _ga=GA1.2.1743041123.1669217815; csrf_session_id=249c5af91538fca61f23a4879333f5b1
           EMAIL: ${{ secrets.EMAIL }}
           AUTHORIZATION_CODE: ${{ secrets.AUTHORIZATION_CODE }}
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
